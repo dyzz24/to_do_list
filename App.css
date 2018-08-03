@@ -1,0 +1,687 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+.background_react {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center; 
+    z-index: -10;  
+    
+}
+
+.back {
+  width: 400px;
+  height: 400px;
+  background: url(logo.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 20s linear;
+  opacity: 0.2;
+}
+@-webkit-keyframes App-logo-spin {
+  0% { 
+    -webkit-transform: rotate(0deg); 
+            transform: rotate(0deg);
+    
+   }
+  100% { 
+    -webkit-transform: rotate(360deg); 
+            transform: rotate(360deg);
+   
+     }
+}
+@keyframes App-logo-spin {
+  0% { 
+    -webkit-transform: rotate(0deg); 
+            transform: rotate(0deg);
+    
+   }
+  100% { 
+    -webkit-transform: rotate(360deg); 
+            transform: rotate(360deg);
+   
+     }
+}
+
+main {
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+
+.App {
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;  
+    z-index: 100; 
+    margin-bottom: 15px;
+    width: 70%; 
+    background: rgba(65, 171, 185, 0.2);
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.527);
+
+}
+
+.App__inputBlock {
+  width: 100%;
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    flex-direction:row;
+justify-content: space-between;
+    align-items: flex-end; 
+}
+
+.App__input {
+  width: 40%;
+  box-sizing: border-box;
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    flex-direction:row;
+    flex-grow: 2;
+    
+}
+
+
+
+.App__input label {
+  width: 100%;
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.App__input p{
+  margin-bottom: 4px;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222224;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7);
+
+}
+
+.App__input input {
+  width: 100%;
+  padding: 0 14px;
+    height: 32px;
+    color: #525864;
+    background: rgb(204, 204, 204);
+    border: 1px solid;
+    border-color: #b3c0e2 #bcc5e2 #c0ccea;
+    background-image: linear-gradient(to bottom, #f6f8fa, white);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.App__input input:focus {
+  box-shadow:  0 1px 10px 1px rgba(19, 100, 177, 0.897), 0 1px rgba(38, 213, 226, 0.5);
+}
+
+button {
+  height: 32px;
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 6px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: white;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size:16px;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: .1s;
+    cursor: pointer;
+}
+.App button p:first-child {
+    margin-right: 6px;
+}
+
+.add {
+  border-color: #1486f9 #0f7de9 #0d6acf;
+  background: #1993fb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4cb1fe), color-stop(40%, #229afc), to(#138df6));
+  background-image: linear-gradient(to bottom, #4cb1fe, #229afc 40%, #138df6);
+}
+
+.add:hover {
+  background: #5a5df0;
+  border-color: #2a48f0;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+.content__add {
+  width: 100%;
+  
+    display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;  
+}
+.parent_toDo {
+  width: 100%;
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 500;
+}
+
+.App__todolist{
+  width: 100%;
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.toDoList {
+  width: 100%;
+margin: 5px 0px;
+    display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;  
+    overflow: hidden;
+    -webkit-animation: toDoReady .5s;
+    animation: toDoReady .5s;
+    border: 1px solid rgba(1, 56, 1, 0.2);
+
+    background-color: rgba(42, 44, 44, 0.15);
+    min-height: 40px;
+}
+
+.toDoList:hover {
+  transition: .4s;
+  background-color: rgba(120, 207, 207, 0.301);
+}
+
+
+
+@-webkit-keyframes toDoReady {
+      0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+      }
+      100%{
+        transform: translateX(0px);
+        opacity: 1;
+      }
+
+}
+@keyframes toDoReady {
+      0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+      }
+      100%{
+        transform: translateX(0px);
+        opacity: 1;
+      }
+
+}
+
+.toDoList img{
+width: 100%;
+height: 100%;
+position: absolute;
+z-index: 0;
+
+}
+
+.pinElement {
+  height: 90px;
+  width: 95%;
+  position: relative;
+  z-index: 15;
+}
+
+.pinElement img {
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  margin-left: 2.5%;
+}
+
+.rings {
+  width: 95%;
+  height: 13px;
+  position: relative;
+  
+  
+}
+
+.rings img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+
+
+
+.headerName,
+.dateName {
+    font-size:16px;
+    height: 100%;
+    width: 40%;
+    padding: 5px 12px;
+    box-sizing: border-box; 
+    text-align: left;
+    text-decoration-color: rgb(66, 59, 59);
+    word-wrap: break-word;
+    
+}
+
+.input_block {
+  flex-shrink: 0;
+  height: 100%;
+  display:flex;
+    display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    flex-direction:row;
+    align-items: center;
+   
+    
+}
+
+[class^='butt'] {
+  width: 60px;
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 40px;
+    padding: 3px 3px;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 16px;
+    transition: .28s cubic-bezier(.4,0,.2,1);
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    display:flex;
+    display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.butt_ok {
+  background-color: rgba(140, 233, 35, 0.788);
+}
+
+.butt_ok:hover {
+	background-color: rgba(113, 172, 45, 0.9);
+}
+
+.butt_del {
+  background-color: #d8746d;
+}
+.butt_del:hover {
+  background-color: #d42b1f;
+}
+
+
+
+[class^='butt']:hover {
+  box-shadow: 0 1px 6px rgba(0,0,0,.4);
+}
+
+
+.toDo__status {
+  width: 100%;
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    opacity: 0.9;
+   
+    
+    
+}
+
+.complete,
+.delete {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  display: -webkit-box;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+        
+}
+
+.compl-del-text {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: 1% 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  word-wrap: break-word;
+  -webkit-animation: hideBlock .6s;
+  animation: hideBlock .6s;
+  background-color: rgba(0, 109, 128, 0.15);
+}
+
+
+
+.compl-del-text span {
+  
+  width: 100%;
+  display: block;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  
+}
+
+
+.not_comp-span {
+  color: rgba(230, 29, 29, 0.911);
+}
+
+.comp-span {
+  color: rgba(35, 48, 224, 0.822);
+}
+
+.completeImg,
+.deleteImg {
+  width: 40px;
+  height: 40px;
+  background: url(ok.svg) no-repeat center;
+}
+.deleteImg {
+  background: url(canc.svg) no-repeat center;
+}
+
+
+
+@-webkit-keyframes hideBlock {
+
+  0% {
+    
+    opacity: 0;
+    -webkit-transform: scale(0,0);
+            transform: scale(0,0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+            transform: scale(1,1);
+    
+  }
+
+}
+
+@keyframes hideBlock {
+
+  0% {
+    
+    opacity: 0;
+    -webkit-transform: scale(0,0);
+            transform: scale(0,0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+            transform: scale(1,1);
+    
+  }
+
+}
+
+.head-status-text {
+  width: 100%;
+   padding: 6px 0px; 
+  margin: 15px 0px;
+  font-size: 18px;
+  color:rgba(26, 27, 27, 0.89);
+  border-bottom: 1px solid black;
+
+}
+
+
+
+
+.complete_p,
+.delete_p
+ {
+  background-color: #4ef177;
+  width: 100%;
+  height: 100%;
+    text-align: left;
+    min-height: 40px;
+  
+    padding: 5px 12px;
+ opacity: 0.5;
+    word-wrap: break-word;
+    box-sizing: border-box;
+
+}
+
+.delete_p {
+  background: #ee4f27;
+
+  
+}
+
+
+[class^='hiddenDiv'] {
+  
+  width: 100%;
+    margin: 5px 0px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    -webkit-animation: toDoReady .5s;
+    animation: toDoReady .5s;
+   
+    
+}
+
+
+
+.dater {
+  color:rgba(8, 8, 8, 0.918);
+}
+
+.clear {
+  align-self: flex-end;
+  margin-top: 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d36221), color-stop(40%, #e4271a), to(#ce170a));
+  background-image: linear-gradient(to bottom, #d36221, #e4271a 40%, #ce170a);
+  border-color: #ff8635 #ec4613 #cc0808;
+}
+
+.histor {
+  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3a67c7), color-stop(40%, #3824ee), to(#2629e6));
+  background-image: linear-gradient(to bottom, #3a67c7, #3824ee 40%, #2629e6);
+  border-color: #355aff #1395ec #0b08cc;
+}
+
+.clear:hover{
+  background: #ee2005;
+  border-color: #be0a0a;
+}
+.histor:hover {
+  background: #032286;
+  border-color: #0a25be;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .pinElement {
+    height: 50px;
+  }
+ 
+  .compl-del-text span{
+    letter-spacing: 0px;
+  }
+
+ 
+
+.App__input p {
+  font-size: 14px;
+}
+button {
+  font-size: 14px;
+}
+}
+
+@media screen and (max-width: 640px) {
+
+  .App__todolist {
+    justify-content: center;
+    margin: 5px 5px;
+  }
+
+  .App {
+    width: 95%;
+  }
+  .head-status-text {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .headerName, .dateName {
+    text-align: center;
+  }
+
+  .App__inputBlock {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .App__input {
+    width: 100%;
+  }
+
+  .App__input input {
+    width: 95%;
+  }
+  .add {
+    margin-top: 10px;
+  }
+  .clear {
+    align-self: flex-start;
+  }
+  .head-status-text {
+    font-size: 18px;
+  }
+
+  .complete, .delete {
+    width: 100%;
+  }
+
+  .back {
+    width: 100px;
+    height: 100px;
+  }
+  .toDoList {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
